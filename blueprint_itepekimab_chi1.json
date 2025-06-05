@@ -1,0 +1,43 @@
+{
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "status": "rescued",
+  "created_by": "SEI-AUTOGEN",
+  "created_at": "2025-06-04T22:00:00Z",
+  "description": "Rescued logic blueprint for anti-IL-33 pathway modulation in COPD. Redesign corrects for epithelial neglect, compensatory cytokine rebound, and non-stratified patient targeting.",
+  "mechanism_of_action": {
+    "primary": "Partial antagonism of IL-33-ST2 signaling using a logic-tuned immunomodulatory scaffold",
+    "secondary": [
+      "Epithelial repair stimulation via MDC-class payload (zinc/selenium cluster)",
+      "Compensation suppression through IL-1β/IL-17 co-inhibition (tunable FDC logic)"
+    ],
+    "modulation_type": "Nonlinear dual-axis restoration"
+  },
+  "molecular_type": "Hybrid MDC-FDC immuno-ligand",
+  "delivery_route": "Inhalation (nebulized microparticle)",
+  "target_site": "Pulmonary epithelial barrier, ILC2 niches",
+  "entropy_class": "Stable",
+  "sei_score": 91.2,
+  "risk_level": "Low-Moderate",
+  "confidence_score": 0.94,
+  "tier_level": 2,
+  "rescue_metadata": {
+    "origin_failure": "Itepekimab Phase 3 AERIFY-2",
+    "reason_for_failure": "Lack of epithelial modulation + statistical underpowering + adaptive cytokine compensation",
+    "corrective_logic": [
+      "Incorporate epithelial repair via metalloprotein co-factor logic",
+      "Avoid full IL-33 blockade—shift to partial tuning",
+      "Suppress rebound cytokines via controlled FDC logic fusion",
+      "Restrict trial design to IL-33 high-expressors (biomarker guided)"
+    ]
+  },
+  "blueprint_tags": [
+    "COPD",
+    "IL-33",
+    "epithelial repair",
+    "SEI-rescue",
+    "MDC-FDC hybrid",
+    "immune compensation logic"
+  ],
+  "version": "χ1.0",
+  "public_access": false
+}

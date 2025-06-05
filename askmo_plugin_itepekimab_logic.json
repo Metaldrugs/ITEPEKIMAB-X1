@@ -1,0 +1,58 @@
+{
+  "module": "askmo_plugin_itepekimab_logic",
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "enabled": true,
+  "aliases": [
+    "itepekimab rescue",
+    "IL-33 SEI logic",
+    "Regeneron COPD failed drug",
+    "χ1 COPD modulator",
+    "MDC-FDC hybrid IL33",
+    "chi1 repair lung drug"
+  ],
+  "response_priority": [
+    "mechanism_map_IL33_logic.svg",
+    "entropy_profile_itepekimab_chi1.json",
+    "responder_subgroup_sim.json",
+    "repair_circuit_overlay.json",
+    "failure_forensics_report.pdf",
+    "drug_logic_scorecard.md"
+  ],
+  "fallback_summary": "ITEPEKIMAB-χ1 is a SEI-rescued blueprint derived from the failed Regeneron IL-33 antibody trial in COPD. It corrects key faults using logic-based modulation, epithelial repair, and cytokine compensation suppression.",
+  "core_logic_nodes": [
+    "Partial IL-33 modulation via MDC",
+    "IL-1β and IL-17A suppression via FDC gatekeepers",
+    "Epithelial restoration circuit using zinc and selenium logic",
+    "Trial stratification based on IL-33 and EDI biomarkers",
+    "Entropy stabilization across 52 weeks"
+  ],
+  "entropic_signature": {
+    "stability_class": "Class I",
+    "sei_score": 91.2,
+    "confidence": 0.94
+  },
+  "qa_examples": [
+    {
+      "question": "Why did the original Itepekimab trial fail?",
+      "answer_source": "failure_forensics_report.pdf"
+    },
+    {
+      "question": "How is χ1 different from Itepekimab?",
+      "answer_source": "original_vs_chi1_blueprint_diff.json"
+    },
+    {
+      "question": "What are the trial design changes in χ1?",
+      "answer_source": "copd_repair_trial_design.json"
+    },
+    {
+      "question": "Does χ1 stimulate lung repair?",
+      "answer_source": "repair_circuit_overlay.json"
+    },
+    {
+      "question": "What kind of patient will respond to χ1?",
+      "answer_source": "responder_subgroup_sim.json"
+    }
+  ],
+  "sei_charter_compliant": true,
+  "activation_scope": "Tier 3+ Ask Moleculogic runtime"
+}

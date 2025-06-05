@@ -1,0 +1,49 @@
+{
+  "module": "rescue_bundle_manifest",
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "rescue_version": "χ1.0",
+  "created_by": "SEI-AUTOGEN",
+  "created_at": "2025-06-04T23:45:00Z",
+  "description": "Master manifest for the full χ1 rescue bundle, including metadata, logic modules, diagrams, trial design, entropy overlays, and AskMo integration.",
+  "files_included": [
+    "blueprint_itepekimab_chi1.json",
+    "mechanism_map_IL33_logic.svg",
+    "repair_circuit_overlay.json",
+    "immune_compensation_model.json",
+    "entropy_profile_itepekimab_chi1.json",
+    "toxicity_overlay_chi1.json",
+    "responder_subgroup_sim.json",
+    "drug_logic_scorecard.md",
+    "aerify1_vs_2_diff_map.svg",
+    "failure_forensics_report.pdf",
+    "original_vs_chi1_blueprint_diff.json",
+    "rescue_IND_summary_sei.html",
+    "sei_patient_logic_model.json",
+    "copd_repair_trial_design.json",
+    "public_trust_justification.md",
+    "mdc_fdc_hybrid_candidate_list.json",
+    "lung_environment_logic_map.json",
+    "askmo_plugin_itepekimab_logic.json"
+  ],
+  "charter_compliance": {
+    "rational_constructivism": true,
+    "transparency_enforced": true,
+    "explainability_score": 100
+  },
+  "sei_entropy_profile": {
+    "initial_entropy": 0.44,
+    "final_entropy": 0.17,
+    "class": "Stable (Class I)"
+  },
+  "sei_validation_checks": {
+    "redundancy": "none",
+    "missing_modules": "none",
+    "checksum_pass": true
+  },
+  "next_steps": [
+    "Deploy public-facing Tier 2 landing page",
+    "Offer controlled access to χ1 IND logic kit",
+    "Monitor MyMonitor platform for candidate trial sites",
+    "Initiate contact with repair-focused respiratory CROs"
+  ]
+}

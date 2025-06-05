@@ -1,0 +1,65 @@
+{
+  "module": "sei_patient_logic_model",
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "version": "1.0",
+  "created_by": "SEI-AUTOGEN",
+  "description": "Logic-based inclusion/exclusion criteria for χ1 clinical trial enrollment. Optimized for signal clarity, entropy reduction, and predictive stratification.",
+  "inclusion_criteria": [
+    {
+      "label": "IL-33 Overexpression",
+      "logic": "Plasma IL-33 ≥ 1.3x population baseline",
+      "method": "qELISA or multiplex cytokine panel"
+    },
+    {
+      "label": "Epithelial Damage Index (EDI)",
+      "logic": "EDI ≥ 0.6",
+      "method": "Computed from BAL fluid biomarker composite score"
+    },
+    {
+      "label": "Exacerbation History",
+      "logic": "≥ 2 moderate or 1 severe COPD exacerbation(s) in past 24 months",
+      "method": "Electronic health record query or trial pre-screen"
+    },
+    {
+      "label": "Th2 Bias Confirmation",
+      "logic": "IL-5:IFNγ ratio > 1.2",
+      "method": "Flow cytometry or cytokine panel"
+    }
+  ],
+  "exclusion_criteria": [
+    {
+      "label": "Active Smoking",
+      "logic": "≥ 1 cigarette/day within past 6 months",
+      "reason": "Reduces predictability of IL-33 modulation"
+    },
+    {
+      "label": "IL-33-low Expression",
+      "logic": "IL-33 < 0.9x baseline",
+      "reason": "Low probability of response; may skew signal"
+    },
+    {
+      "label": "Uncontrolled Cardiac Disease",
+      "logic": "EF < 45% or recent MI < 6 months",
+      "reason": "Confounds pulmonary repair logic interpretation"
+    },
+    {
+      "label": "Immunosuppressive Drug Use",
+      "logic": "Systemic corticosteroids > 10mg/day prednisone equivalent",
+      "reason": "Alters immune compensation circuits"
+    }
+  ],
+  "enrichment_algorithm": {
+    "type": "tiered logic filter",
+    "priority_weights": {
+      "IL-33 Expression": 0.35,
+      "EDI": 0.30,
+      "Exacerbation History": 0.20,
+      "Th2 Bias": 0.15
+    },
+    "target_population_size": 100 (Phase 2 adaptive design),
+    "expected response rate": "≥ 75% in enriched cohort"
+  },
+  "sei_charter_compliance": true,
+  "confidence_score": 0.95,
+  "entropy_bias_class": "predictable"
+}

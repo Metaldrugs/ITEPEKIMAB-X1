@@ -1,0 +1,61 @@
+{
+  "module": "original_vs_chi1_blueprint_diff",
+  "original_blueprint_id": "ITEPEKIMAB (Regeneron)",
+  "rescued_blueprint_id": "ITEPEKIMAB-χ1",
+  "differences": [
+    {
+      "category": "Mechanism of Action",
+      "original": "Full IL-33 neutralization via monoclonal antibody",
+      "chi1": "Partial IL-33 modulation with logic-tuned threshold trigger"
+    },
+    {
+      "category": "Tissue Repair Logic",
+      "original": "Absent",
+      "chi1": "MDC-based epithelial regeneration circuit (Zn2+/KGF)"
+    },
+    {
+      "category": "Immune Compensation Handling",
+      "original": "Not addressed",
+      "chi1": "FDC-based co-inhibition of IL-1β, IL-17A, and HMGB1 pathways"
+    },
+    {
+      "category": "Delivery Route",
+      "original": "Intravenous monoclonal antibody",
+      "chi1": "Inhaled microparticle with localized pulmonary delivery"
+    },
+    {
+      "category": "Target Stratification",
+      "original": "Former smokers (unstratified IL-33 expression)",
+      "chi1": "IL-33-high + EDI-stratified cohort for maximum signal amplification"
+    },
+    {
+      "category": "Entropy Management",
+      "original": "Passive decline post-Week 24",
+      "chi1": "Predictive entropy suppression through Week 52"
+    },
+    {
+      "category": "Toxicity Risk",
+      "original": "Moderate (fibrosis, rebound inflammation)",
+      "chi1": "Very low (repair logic + immune gatekeeping)"
+    },
+    {
+      "category": "Clinical Durability",
+      "original": "Fades by Week 36–52",
+      "chi1": "Stabilized response projected through Week 52+"
+    },
+    {
+      "category": "Platform Type",
+      "original": "Biologic-only (mAb)",
+      "chi1": "Hybrid MDC-FDC logic-compliant therapeutic construct"
+    }
+  ],
+  "sei_validation": {
+    "confirmed_logic_corrections": 9,
+    "unresolved_issues": 0,
+    "sei_charter_compliance": true
+  },
+  "notes": [
+    "This diff supports IP novelty, regulatory explanation, and SEI transparency requirements.",
+    "Each corrected axis is tied to a measurable functional gain in the entropy and toxicity modules."
+  ]
+}

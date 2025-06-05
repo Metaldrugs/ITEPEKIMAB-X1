@@ -1,0 +1,72 @@
+{
+  "module": "copd_repair_trial_design",
+  "trial_id": "SEI-ITEPχ1-PH2",
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "phase": "Phase 2",
+  "trial_design": "Stratified, randomized, adaptive, multi-arm",
+  "enrollment_target": 100,
+  "inclusion_model": "see sei_patient_logic_model.json",
+  "arms": [
+    {
+      "arm_id": "A",
+      "description": "IL-33-high + EDI-high (repair priority)",
+      "dose": "Low-dose χ1 (25μg, inhaled weekly)",
+      "allocation_ratio": 2,
+      "expected_response": 0.82
+    },
+    {
+      "arm_id": "B",
+      "description": "IL-33-high + EDI-moderate",
+      "dose": "Medium-dose χ1 (50μg, inhaled weekly)",
+      "allocation_ratio": 1,
+      "expected_response": 0.71
+    },
+    {
+      "arm_id": "C",
+      "description": "Control (inhaled placebo)",
+      "dose": "0μg, matching vehicle",
+      "allocation_ratio": 1,
+      "expected_response": 0.22
+    }
+  ],
+  "primary_endpoints": [
+    {
+      "label": "Annualized Rate of Moderate or Severe COPD Exacerbations",
+      "type": "efficacy",
+      "analysis": "Negative binomial regression",
+      "success_threshold": "≥40% reduction vs. placebo, p < 0.05"
+    }
+  ],
+  "secondary_endpoints": [
+    {
+      "label": "Entropy Score at Week 52",
+      "type": "SEI-derived systemic stability metric",
+      "target": "≤ 0.20"
+    },
+    {
+      "label": "Lung Epithelial Integrity Score (LEIS)",
+      "type": "composite biomarker panel",
+      "target": "≥ 20% improvement from baseline"
+    },
+    {
+      "label": "IL-1β / IL-17 Suppression Index",
+      "type": "cytokine panel reduction",
+      "target": "≥ 50% suppression from peak at Week 24"
+    }
+  ],
+  "safety_monitoring": {
+    "toxicity_tracking": true,
+    "cytokine storm watch": true,
+    "interim DSMB review": "Week 16 and 36"
+  },
+  "adaptive logic": {
+    "interim_adjustment_allowed": true,
+    "rules": [
+      "Drop Arm B if Arm A ≥ 15% higher at Week 24",
+      "Escalate Arm A dose only if LEIS plateau observed"
+    ]
+  },
+  "trial_duration": "52 weeks + 8-week follow-up",
+  "sei_oversight_enabled": true,
+  "sei_trial_entropy_bound": "Class II (Low Entropy, Stable Progression)"
+}

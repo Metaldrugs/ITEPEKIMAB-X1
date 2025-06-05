@@ -1,0 +1,49 @@
+{
+  "module": "immune_compensation_model",
+  "target_blueprint": "ITEPEKIMAB-χ1",
+  "status": "active",
+  "created_by": "SEI-AUTOGEN",
+  "description": "Models cytokine rebound effects observed after IL-33 suppression and defines SEI logic interventions for χ1 to prevent immunologic compensation.",
+  "observed_compensatory_axes": [
+    {
+      "pathway": "IL-1β",
+      "source_cells": ["macrophages", "dendritic cells"],
+      "activation_window": "Weeks 16–40",
+      "impact": "Upregulation of neutrophilic inflammation and mucosal damage"
+    },
+    {
+      "pathway": "IL-17A / IL-22",
+      "source_cells": ["Th17 cells", "γδ-T cells"],
+      "activation_window": "Weeks 24–52",
+      "impact": "Late-stage inflammation, airway remodeling, epithelial degradation"
+    },
+    {
+      "pathway": "HMGB1 (alarmin override)",
+      "source_cells": ["necrotic epithelial cells"],
+      "activation_window": "Chronic phase (Weeks 20+)",
+      "impact": "Persistent danger signaling despite IL-33 blockade"
+    }
+  ],
+  "χ1_circuit_interventions": [
+    {
+      "modulation": "Controlled FDC suppression of IL-1β via caspase-1 tuning",
+      "delivery": "encapsulated nano-FDC logic gate, time-delayed release"
+    },
+    {
+      "modulation": "Th17 pathway dampening via AhR-tuned FDC analog",
+      "delivery": "systemic administration, biweekly, low-dose"
+    },
+    {
+      "modulation": "HMGB1 response dampening via MDC-ligated decoy receptor",
+      "delivery": "inhaled, linked to MDC repair construct"
+    }
+  ],
+  "output_mode": "simulated time-series overlay",
+  "entropy_trend": "preventive",
+  "sei_score": 93.4,
+  "notes": [
+    "Rebound pathways were not accounted for in original design",
+    "χ1 uses preemptive suppression logic to block delayed flares",
+    "Ensures therapeutic durability through Week 52 and beyond"
+  ]
+}

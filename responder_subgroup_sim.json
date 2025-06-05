@@ -1,0 +1,42 @@
+{
+  "module": "responder_subgroup_sim",
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "description": "Simulates SEI-projected response likelihood across COPD subgroups. Identifies optimal responder clusters for SEI-stratified trial design.",
+  "stratification_variables": [
+    "IL-33 expression level",
+    "Peripheral eosinophil count",
+    "Epithelial damage index (EDI)",
+    "Th2/Th17 dominance score",
+    "Prior exacerbation history (3-year window)",
+    "Baseline lung repair biomarker panel"
+  ],
+  "simulated_subgroups": [
+    {
+      "label": "IL-33-high + Eosinophilic + EDI > 0.7",
+      "estimated_response_rate": 0.84,
+      "confidence_score": 0.91,
+      "recommendation": "Primary cohort for Phase 2 SEI trial"
+    },
+    {
+      "label": "Moderate IL-33 + Mixed Inflammatory Profile",
+      "estimated_response_rate": 0.58,
+      "confidence_score": 0.78,
+      "recommendation": "Secondary cohort, dose-adjusted"
+    },
+    {
+      "label": "IL-33-low + Neutrophilic + Minimal Epithelial Injury",
+      "estimated_response_rate": 0.24,
+      "confidence_score": 0.63,
+      "recommendation": "Exclude from early trials; monitor in late-stage"
+    }
+  ],
+  "delivery_implication_notes": [
+    "IL-33-high patients show enhanced local drug uptake with inhaled microparticle route",
+    "Patients with elevated EDI respond better to MDC repair circuits",
+    "Stratification by blood eosinophils is feasible for trial pre-screening"
+  ],
+  "sei_recommendation": {
+    "trial_enrollment_filter": "Only enroll patients with IL-33 ≥ 1.3x baseline and EDI > 0.6",
+    "predicted trial efficacy": "70–85% reduction in exacerbation rate at Week 52"
+  }
+}

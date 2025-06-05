@@ -1,0 +1,69 @@
+{
+  "module": "mdc_fdc_hybrid_candidate_list",
+  "blueprint_id": "ITEPEKIMAB-χ1",
+  "description": "SEI-curated list of MDC/FDC hybrid candidate payloads for modular rescue of IL-33-mediated COPD pathophysiology. Each entry is logic-validated and designed for inclusion in the χ1 construct or next-gen variants.",
+  "candidates": [
+    {
+      "id": "MDC-ZnMX-33R",
+      "class": "MDC",
+      "function": "Zinc-coordinated IL-33 modulator",
+      "mechanism": "Binds IL-33 at ST2 interface with partial occupancy, reducing overactivation",
+      "delivery": "Encapsulated microparticle, pH-triggered",
+      "activation_trigger": "IL-33 > 1.3x baseline + oxidative stress",
+      "entropy_score": 0.12,
+      "toxicity_class": "Low"
+    },
+    {
+      "id": "FDC-IL1Gate-α",
+      "class": "FDC",
+      "function": "IL-1β suppression via caspase-1 logic",
+      "mechanism": "Inhibits inflammasome activation threshold beyond defined TNF level",
+      "delivery": "Systemic microdose with delayed release",
+      "activation_trigger": "IL-1β spike or CRP > 2.0",
+      "entropy_score": 0.19,
+      "toxicity_class": "Very Low"
+    },
+    {
+      "id": "MDC-SeGF-R",
+      "class": "MDC",
+      "function": "Epithelial regrowth stimulator",
+      "mechanism": "Delivers selenium ion to activate keratinocyte and club cell regeneration genes",
+      "delivery": "Nebulized lipid-metal particle",
+      "activation_trigger": "Low Epithelial Damage Index (EDI > 0.5)",
+      "entropy_score": 0.14,
+      "toxicity_class": "Minimal"
+    },
+    {
+      "id": "FDC-Th17Lock-β",
+      "class": "FDC",
+      "function": "Th17 suppression co-module",
+      "mechanism": "Aryl hydrocarbon receptor modulation to suppress IL-17A/IL-22",
+      "delivery": "Inhaled co-agent with local lung targeting",
+      "activation_trigger": "IL-17A > 0.8 baseline or high neutrophilic signature",
+      "entropy_score": 0.17,
+      "toxicity_class": "Low-Moderate"
+    },
+    {
+      "id": "MDC-MMP-GateX",
+      "class": "MDC",
+      "function": "Matrix remodeling control agent",
+      "mechanism": "Logic-controlled delivery of MMP-10 analog to prevent fibrosis",
+      "delivery": "Prodrug form with MMP-gated release logic",
+      "activation_trigger": "TGF-β > 1.2 baseline and collagen type I > 2x",
+      "entropy_score": 0.13,
+      "toxicity_class": "Very Low"
+    }
+  ],
+  "sei_recommendation": {
+    "primary_loadout": [
+      "MDC-ZnMX-33R",
+      "FDC-IL1Gate-α",
+      "MDC-SeGF-R"
+    ],
+    "fallback modules": [
+      "FDC-Th17Lock-β",
+      "MDC-MMP-GateX"
+    ],
+    "formulation note": "All candidates are modular and may be layered or swapped dynamically for next-gen χ2 variants."
+  }
+}
